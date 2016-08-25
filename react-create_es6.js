@@ -45,6 +45,7 @@ export default ${componentName};`
 
 } else if (type === 'func') {
 
+  fs.appendFile(`${decapitalize(componentName)}.jsx`,
 `'use strict';
 import React from 'react';
 import {render} from 'react-dom';
@@ -55,5 +56,6 @@ let ${componentName} = (props) => (
 );
 
 export default ${componentName};`
+  );
 
 }
