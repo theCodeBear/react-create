@@ -12,7 +12,7 @@ Each time the reactCreate command is run it will create a new component in the c
 
 <br>
 
-Syntax: reactCreate nameOfComponent es5/es6/func <list of component dependencies><br>
+ <h4> Syntax: reactCreate nameOfComponent es5/es6/func <list of component dependencies></h4><br>
 
 
 
@@ -36,6 +36,7 @@ This example will create a JSX file that looks like this:
 
 <h3>Example 2:</h3>
 <em>reactCreate statusBar es5 menuItem</em>
+
 NOTE: The es5 command currently isn't completed in this tool.<br>
 This example will create a JSX file that looks like this:
 
