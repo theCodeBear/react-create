@@ -10,9 +10,9 @@
 <h2>Usage:</h2><br>
 Each time the reactCreate command is run it will create a new component in the current working directory. This tool assumes that CSS modules are being used to handle the styling in React, so it creates a directory for the component, and inside that directory it puts a CSS file and a JSX file. The CSS file is imported in the JSX file. The CSS file will be empty while the JSX file will be initialized as shown below.
 
-<br><br>
+<br>
 
-<h4>Syntax: reactCreate nameOfComponent es5/es6/func <list of component dependencies></h4><br>
+Syntax: reactCreate nameOfComponent es5/es6/func <list of component dependencies><br>
 
 
 
