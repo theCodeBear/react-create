@@ -5,7 +5,7 @@
     4. Go in your ~/.bash_profile file and create the following line<br>
         export PATH=path/to/reactCreate/directory:$PATH<br>
         i.e.      export PATH=~/Documents/Programs/scripts/reactcreate:$PATH<br>
-    5. Now user reactcreate from anywhere on the terminal<br>
+    5. Now use reactCreate from anywhere on the command line<br>
 
 <h2>Usage:</h2><br>
 Each time the reactCreate command is run it will create a new component in the current working directory. This tool assumes that CSS modules are being used to handle the styling in React, so it creates a directory for the component, and inside that directory it puts a CSS file and a JSX file. The CSS file is imported in the JSX file. The CSS file will be empty while the JSX file will be initialized as shown below.
