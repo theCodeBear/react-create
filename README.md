@@ -8,17 +8,20 @@
     5. Now user reactcreate from anywhere on the terminal<br>
 
 <h2>Usage:</h2><br>
-    reactCreate nameOfComponent es5/es6/func <list of component dependencies><br>
+Each time the reactCreate command is run it will create a new component in the current working directory. This tool assumes that CSS modules are being used to handle the styling in React, so it creates a directory for the component, and inside that directory it puts a CSS file and a JSX file. The CSS file is imported in the JSX file. The CSS file will be empty while the JSX file will be initialized as shown below.
+<br>
+Syntax: reactCreate nameOfComponent es5/es6/func <list of component dependencies><br>
 
 
 
-Example 1:
-    reactCreate statusBar func menuItem
+<h3>Example 1:</h3>
+   <em>reactCreate statusBar func menuItem</em>
 
-The example above will create a file that looks like this:
+The example above will create a JSX file that looks like this:
 
     import React from 'react';
     import {render} from 'react-dom';
+    import styles from './statusBar.css';
     import MenuItem from './menuItem.jsx';
 
     let StatusBar = (props) => (
@@ -29,13 +32,14 @@ The example above will create a file that looks like this:
 
 
 
-Example 2:
-    reactCreate statusBar es5 menuItem
-
+<h3>Example 2:</h3>
+    <em>reactCreate statusBar es5 menuItem</em>
+NOTE: The es5 command currently isn't completed in this tool.<br>
 The example above will create a file that looks like this:
 
     var React = require('react');
     var render = require('react-dom').render;  ????
+    import styles from './statusBar.css';
     var MenuItem = require('./menuItem.jsx');
 
     var StatusBar = React.createClass({
@@ -49,13 +53,14 @@ The example above will create a file that looks like this:
     module.exports = StatusBar;
 
 
-Example 3:
-    reactCreate statusBar func menuItem
+<h3>Example 3:</h3>
+    <em>reactCreate statusBar func menuItem</em>
 
 The example above will create a file that looks like this:
 
     import React from 'react';
     import {render} from 'react-dom';
+    import styles from './statusBar.css';
     import MenuItem from './menuItem.jsx';
 
     class StatusBar extends React.Component {
