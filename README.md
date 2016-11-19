@@ -13,8 +13,8 @@ Each time the reactCreate command is run it will create a new component in the c
 <br>
 
 <h4> Syntax: reactCreate nameOfComponent es5/es6/func [list of component dependencies]</h4>
-i.e: reactCreate Login es6 Submit MyForm
-i.e: reactCreate Login es6<br>
+i.e: reactCreate Login es6 Submit MyForm<br>
+i.e: reactCreate Login es6<br><br>
 
 
 
