@@ -59,7 +59,7 @@ This example will create a JSX file that looks like this:
 
 
 <h3>Example 3:</h3>
-<em>reactCreate StatusBar func MenuItem</em>
+<em>reactCreate StatusBar es6 MenuItem</em>
 
 The example above will create a file that looks like this:
 
