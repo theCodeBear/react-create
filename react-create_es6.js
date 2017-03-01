@@ -42,7 +42,7 @@ ${components.map(name => `import ${name} from '../${decapitalize(name)}/${decapi
 class ${componentName} extends React.Component {
   render() {
     return (
-      <div>${name}</div>
+      <div>${componentName}</div>
     );
   }
 }
@@ -60,7 +60,7 @@ import styles from './${decapitalize(componentName)}.css';
 ${components.map(name => `import ${name} from '../${decapitalize(name)}/${decapitalize(name)}.jsx';`).join('\n')}
 
 const ${componentName} = (props) => (
-  <div>${name}</div>
+  <div>${componentName}</div>
 );
 
 export default ${componentName};`
