@@ -59,7 +59,7 @@ import {render} from 'react-dom';
 import styles from './${decapitalize(componentName)}.css';
 ${components.map(name => `import ${name} from '../${decapitalize(name)}/${decapitalize(name)}.jsx';`).join('\n')}
 
-let ${componentName} = (props) => (
+const ${componentName} = (props) => (
   <div>${name}</div>
 );
 
