@@ -40,6 +40,10 @@ import styles from './${decapitalize(componentName)}.css';
 ${components.map(name => `import ${name} from '../${decapitalize(name)}/${decapitalize(name)}.jsx';`).join('\n')}
 
 class ${componentName} extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>${componentName}</div>
